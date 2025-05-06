@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial — CC</title>
+</head>
+<body style="background-color:rgb(2, 39, 44);">
+    <h1 style="color:rgb(255, 255, 255); font-size: 3em; text-align:center;">Bem-vindo ao site do curso de Ciência da Computação</h1>
+    <br>
+    <p style="color:rgb(255, 255, 255); text-align:center; font-size: 1.5em; font-weight: bold;">Conheça a grade curricular do curso e descubra mais sobre a estrutura do curso</p>
+
+    <br>
+    <h2 style="color:rgb(255, 255, 255);">Sobre o Curso de CC</h2>
+    <p style="color:rgb(255, 255, 255);">O curso de Ciência da Computação forma profissionais capacitados a atuar no desenvolvimento de software, inteligência artificial, ciência de dados e outras áreas da computação moderna. O curso combina teoria e prática para preparar o estudante para os desafios do mercado e da pesquisa acadêmica.</p>
+
+    <br>
+    <h2 style="color:rgb(255, 255, 255);">Links para as páginas da Grade Curricular</h2>
+    <ul>
+        <li style="color:rgb(255, 255, 255);"><a style="color:rgb(197, 168, 2);" href="grade_cabecalhos.html">Grade Curricular — Cabeçalho</a></li>
+        <li style="color:rgb(255, 255, 255);"><a style="color:rgb(197, 168, 2);" href="grade_tabela.html">Grade Curricular — Tabela</a></li>
+        <li style="color:rgb(255, 255, 255);"><a style="color:rgb(197, 168, 2);" href="grade_listas.html">Grade Curricular — Lista</a></li>
+    </ul>
+
+    <br>
+    <h2 style="color:rgb(255, 255, 255);">Links Úteis</h2>
+    <p style="color:rgb(255, 255, 255);"><a style="color:rgb(197, 168, 2);" href="https://cc.uffs.edu.br" target="_blank">Site oficial do curso de Ciência da Computação</a></p>
+
+    <br>
+    <blockquote style="font-style: italic; font-size: 1.2em; border-left: 5px solid #c5a802; padding-left: 20px; margin: 20px 0; background-color: #f9f9f9; border-radius: 15px; padding: 20px;">
+        <p>"A ciência da computação não é mais sobre computadores do que a astronomia é sobre telescópios."</p>
+        <footer style="text-align: right; font-size: 1em; font-weight: bold; color: #179092;">— Edsger Dijkstra</footer>
+      </blockquote>
+
+    <br>
+    <div>
+        <img style="width: 32%; height: 100%; border-radius: 10px;" src="https://agenciagentileza.com.br/wp-content/uploads/2025/04/gentileza-site-mobile.3-e1744826697893.jpg">
+        <img style="width: 35%; height: 100%; border-radius: 10px;" src="https://wordpress-cms-gc-prod-assets.quero.space/uploads/2022/01/Ciencia-da-Computacao.jpg">
+        <img style="width: 32%; height: 100%; border-radius: 10px;" src="https://i0.wp.com/nubix.cloud/wp-content/uploads/2023/05/network-gae43e2419_1280.jpg?fit=1280%2C853&ssl=1g">
+    </div>
+
+    <br>
+    <h1 style="color:rgb(255, 255, 255);">Contagem Regressiva para Jantar no RU</h1>
+    <p style="color:rgb(255, 255, 255); font-size: 3em; font-weight: bold;" id="countdown"></p>
+
+    <script>
+        var countdownDate = new Date();
+            countdownDate.setHours(17);
+            countdownDate.setMinutes(40);
+            countdownDate.setSeconds(0);
+            countdownDate.setMilliseconds(0);
+
+        var x = setInterval(function() {
+            var now = new Date().getTime();
+            var distance = countdownDate - now;
+
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("countdown").innerHTML = hours + "h " + minutes + "m " + seconds + "s ";
+
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("countdown").innerHTML = "A hora chegou!";
+            }
+        }, 1000);
+    </script>
+
+    <h2 style="color:rgb(255, 255, 255);">Onde Estamos:</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3551.315932944779!2d-52.7066383!3d-27.114857299999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94e4b421a91cfe4d%3A0x2495fd237883aa40!2sUniversidade%20Federal%20da%20Fronteira%20Sul!5e0!3m2!1spt-BR!2sbr!4v1746531814457!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <br>
+
+    <br>
+    <h3 style="color:rgb(255, 255, 255);">Logo da UFFS:</h3>
+    <img style="color:rgb(255, 255, 255);" src="caminho/errado/logo-uffs.png" alt="Logotipo da Universidade Federal da Fronteira Sul (UFFS)">
+    <br>
+    <h3 style="color:rgb(255, 255, 255);">Logo do Curso de Ciência da Computação:</h3>
+    <img style="border-radius: 15px; width: 1500px; height: auto; color: rgb(255, 255, 255);" src="https://cc.uffs.edu.br/images/logo/CC-logo-com-background.svg" alt="Logotipo do Curso de Ciência da Computação da UFFS">
+    
+    <br>
+    <h2 style="color:rgb(255, 255, 255); text-align:center;">Estamos muito felizes em ter você aqui!</h2>
+    <p style="color:rgb(255, 255, 255); text-align:center;">Seja bem-vindo ao curso de Ciência da Computação da UFFS. Esperamos que aproveite sua jornada conosco e desenvolva suas habilidades para o futuro!</p>
+
+    <br>
+    <hr>
+    <p style="color:rgb(255, 255, 255);"><em>Página criada para a organização da Grade Curricular do curso de Ciência da Computação — UFFS.</em></p>
+
+</body>
+</html>
