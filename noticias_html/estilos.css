@@ -1,0 +1,54 @@
+.titulo {
+    text-align: center;
+    color: #008cff;
+    border-style: solid;
+    font-size: 70px;
+  }
+  
+  .cha {
+    text-align: center;
+    color: #fafbfc;
+    background-color: #008cff;
+    border-style: solid;
+    font-size: 40px;
+  }
+
+  
+  .container-flex {
+              display: flex;
+              align-items: flex-start;
+          }
+  
+  .imagem-flex {
+              margin-right: 10px;
+          }
+  
+  .texto-formatado {
+          font-size: 20px;
+          text-align: left
+              
+          }
+  .imagem-arredondada-azul {
+    border-radius: 15px;
+    border: 5px solid blue;
+  }
+
+  .roda{
+    text-align: center;
+    color: #fafbfc;
+    background-color: #008cff;
+    border-style: solid;
+    font-size: 20px;
+  }
+
+  .link {
+    text-align: center;
+    color: #008cff;
+    font-size: 30px;
+  }
+
+  .button1 {
+    background-color: 008cff;
+    color: #008cff;
+    border-radius: 50%;
+  }
